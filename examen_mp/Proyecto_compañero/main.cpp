@@ -9,8 +9,7 @@
  * 
  * Rellene sus datos personales.
  * 
- * Alumno: Gabriel Filipov Petkov
- * Correo Electrónico: gabrielfp@correo.ugr.es
+ 
  * 
  ******************************************************************************/
 
