@@ -6,7 +6,6 @@
 
 /* 
  * File:   Nomina.cpp
- * Author: gabrielfp
  * 
  * Created on 11 de mayo de 2023, 8:48
  */
