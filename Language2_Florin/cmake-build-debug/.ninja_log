@@ -1,0 +1,6 @@
+# ninja log v5
+0	219	1681324203749885899	CMakeFiles/Language2_Florin.dir/src/Language.cpp.o	6eded3f68bae7196
+1	224	1681293630123284656	CMakeFiles/Language2_Florin.dir/src/BigramFreq.cpp.o	df5470294e855b8a
+0	162	1682197210052749996	CMakeFiles/Language2_Florin.dir/src/main.cpp.o	fa84f0c1b731d93a
+162	207	1682197210096749906	Language2_Florin	beba28da3bf449e4
+1	212	1681293630111284600	CMakeFiles/Language2_Florin.dir/src/Bigram.cpp.o	b81602be24afe946

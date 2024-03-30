@@ -1,0 +1,25 @@
+En la aplicación LEARN:
+Tendremos n ficheros de entrada en .txt los cuales se van a convertir en  n ficheros languages o .bgr.
+
+No obstante, se pueden crear languages enriquecidos, una suerte de
+language aglutinado, que integre varios ficheros languages de un mismo
+idioma, obtenido por fusión 2 . Ası́, podremos obtener un fichero language
+más representativo para el español como fusión de textos de diferentes
+épocas como por ejemplo: Quijote + Fortunata.
+
+
+ESto se realizará con la aplicación JOIN:
+Para así obtener un solo fichero con todos los textos que tengan el mismo idioma
+
+Por último, el tercer programa, CLASSIFY, figura 4, toma como entra-
+da: un documento de texto en un idioma desconocido y un conjunto de
+ficheros language de referencia, que representan los idiomas candidatos
+a ser asignados al documento de texto. La salida del programa se hace
+por pantalla, y nos informa del idioma más plausible en el que está escrito
+el fichero de texto.
+
+
+
+Para entender la matriz hacemos caso a lo de chatgpt en el grupo de "Enviar Cosas" buscar por "Entender matriz"
+
+

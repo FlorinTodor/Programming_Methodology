@@ -1,0 +1,12 @@
+10
+Ana López 5000 4100
+Luis Gómez 7000 5600
+Carla Sánchez 4500 3600
+Miguel García 8000 6400
+Elena Martínez 6000 4800
+Pablo Ruiz 5500 4400
+Sara Jiménez 6500 5200
+Diego Pérez 9000 7200
+Sofía Torres 7500 6000
+Pedro Fernández 4000 3200
+

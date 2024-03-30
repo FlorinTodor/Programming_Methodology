@@ -1,0 +1,26 @@
+Dado un language, Lx de idioma desconocido, y un conjunto de languages de referencia, L1 , L2 , ..Li , se quiere calcular la distancia de Lx a
+cada uno de los languages L1 , L2 , ..Li y determinar aquel con menor distancia, para asignarle su idioma al language de idioma desconocido.
+
+
+Para identificar el language más próximo, es necesario definir una medida de distancia entre dos languages, esto es, medir el parecido entre dos
+languages. Los detalles se muestran en sección 4. Los distintos languages que van a intervenir, en nuestro proceso de predicción, 
+se van a almacenar todos en memoria dinámica; esto nos va a permitir introducirnos en la gestión dinámica de memoria de forma práctica, inicialmente fuera de una clase.
+
+Se basa en calcular los rank entre un language y otro, teniendo en cuenta que que debe de ser en valor absoluto.
+
+
+Dado un bigrama determinado de L1 , bigrami (L1 ), que se encuentra en L1 una posición, rankbigram , este se busca en L2 obteniendo ası́ su posi-i (L1 )L2 ción,.
+Se basa en buscar en la posición en el que se encuentra cada bigram y restar el l1 -l2 en valor absoluto, si no se encuentra en l2 se le pone de  valor el size de l1.
+
+La distancia se calcula como la sumatoria de la resta de los rank / 100.
+distancia(l1,l2) = sum / 100;
+
+La distancia de un objeto language L1 vacı́o a otro objeto language
+cualquiera L2 no está definida. Como puede ver en los comentarios
+del método getDistance() en Language.h, se debe lanzar una
+excepción std::invalid_argument en el método getDistance()
+si el objeto *this no contiene ningún bigrama.
+
+YA QUE UN BIGRAMA DEBE DE TENER AL MENOS 1  DE FRECUENCIA
+
+HAY QUE TENER EN CUENTA QUE SOLO SE REVISAN LOS ELEMENTOS QUE CONTENGA L1 Y SE BUSCAN EN L2

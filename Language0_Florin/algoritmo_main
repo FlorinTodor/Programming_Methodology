@@ -1,0 +1,169 @@
+############################## ALGORITMO ANTIGUO ##########################
+
+ int contador=0;
+    char letra1, letra2;
+    for(int i=0 ; i< cadena1.size(); ++i){
+        if (isValidCharacter(cadena1[i],validCharacters)){
+            contador++;
+            if ( contador == 1){ letra1 = cadena1[i];}
+            if ( contador == 2){ letra2 = cadena1[i];
+                Bigram aux(letra1,letra2);
+                palabras = aux;
+                letra1 = letra2;
+                contador = 1;
+            } //Supuestamente funciona
+
+                cout<<palabras.toString()<<endl;
+
+            //QUeda pensar como seguir teniendo la letra anterior, ya que son consecutivos. v2_ Supuestamente ya estaría hecho con el tema de contador = 1
+
+        }
+        else{
+            contador=0;
+        }
+
+    }
+    
+    
+
+############################### ALGORITMO NUEVO ##############################
+
+Debemos de saber que a la función maín se le pasa dos parametros, ambos son un string.
+
+El primer string se utiliza para buscar las parejas de Bigrams que se van a guardar en un array de Bigram llamado palabras.
+
+Todos los bigram de dicho array están inicializados como "__" .
+
+Hay que tener en cuenta que son parejas de dos en dos consecutivos, es decir, si la palabra es "casa" las posibles parejas de Bigram son : ca,as,sa.
+
+Claramente hay que verificar si lo que se introduce se permite o no a través de la función isValidCharacter.
+
+
+Cuando se verifica y se crean las parejas de Bigram hay que ir reservandolas en el array de Bigrams.
+
+Tras finalizar de tener todas las parejas la salida del programa debe ser :
+
+nº de parejas encontradas
+salida de todas las parejas que se encuentre en el array
+
+salida de todas las parejas y en el caso de que la pareja coincida con el segundo array se debe de mostrar en pantalla en mayúscula.
+
+
+
+
+/*
+ * Metodología de la Programación: Language0
+ * Curso 2022/2023
+ */
+
+/*
+ * File:   main.cpp
+ * @author Silvia Acid Carrillo <acid@decsai.ugr.es>
+ * @author Andrés Cano Utrera <acu@decsai.ugr.es>
+ * @author Luis Castillo Vidal <L.Castillo@decsai.ugr.es>
+ *
+ * Created on 2 de febrero de 2023, 12:23
+ */
+
+
+
+/**
+ * This program reads a text (without spaces) with a undefined number of
+ * characters and a text with two characters (bigram). It finds the bigrams
+ * contained in the first text, storing them in an array of Bigram.
+ * After that, the bigrams of the array are shown in the standard output.
+ * Then it converts to uppercase the bigrams in the array that are equals to the
+ * bigram of the second text. Finally the bigrams of the array are shown again
+ * in the standard output.
+ * Running example:
+ * > language0 < data/SimpleText.txt
+ */
+
+/**
+ * @author Florin Emanuel Todor
+ * @date   03/03/2023
+ */
+#include <string>
+#include "../include/Bigram.h"
+#include "iostream"
+
+using namespace std;
+
+
+int main(int argc, char* argv[]) {
+    // This string contains the list of characters that are considered as
+    // valid within a word. The rest of characters are considered as
+    // separators
+    const string validCharacters = "abcdefghijklmnopqrstuvwxyz\xE0\xE1\xE2\xE3\xE4\xE5\xE6\xE7\xE8\xE9\xEA\xEB\xEC\xED\xEE\xEF\xF0\xF1\xF2\xF3\xF4\xF5\xF6\xF8\xF9\xFA\xFB\xFC\xFD\xFE\xFF";
+
+    string cadena1 = argv[1];
+    string cadena2 = argv[2];
+    Bigram palabras[20];
+    int n=0; //nº de parejas de bigram
+    int  contador=0;
+    string aux;
+    char e;
+
+    // Read a text
+    // Convertir todos los elementos en minúscula
+
+    for(int i = 0 ; i< cadena1.size(); ++i){
+        cadena1[i] = tolower(cadena1[i]);
+    }
+    for(int i=0; i< cadena1.size(); ++i){
+
+        if(isValidCharacter(cadena1[i],validCharacters)){
+            contador++;
+
+            if (contador==1){
+                aux.push_back(cadena1[i]);
+            }
+            if (contador == 2){
+                aux.push_back(cadena1[i]);
+                char e = aux[1];
+                palabras[n]=aux;
+                contador=1; //Para guardar el segundo caracter
+                n++; //Aumentar el número de parejas de bigram
+                aux.clear();
+                aux.push_back(e);
+
+
+            }
+
+
+        }
+
+        else{
+            aux.clear();
+            contador=0;
+        }
+    }
+
+    ///////////////////////////////////////////ALGORITMO TERMINADO //////////////////////////////
+
+
+    cout<<n<<endl;
+
+    for(int i=0; i< n; ++i){
+        cout<<palabras[i].toString()<<endl;
+    }
+
+
+
+
+    //Tras tener todos los bigramas hechos, tenemos que buscar en ese array si hay alguna pareja que tenga cadena2, si lo tiene se pone en mayúscula.
+
+
+
+    // Read a bigram (tex with two characters)
+
+    // Find the bigrams in text and put them in an array of Bigrams
+
+    // Show the bigrams stored in the array
+
+    // Convert to uppercase the bigrams in the array that are equals to input bigram
+
+    // Show again the bigrams stored in the array
+}
+
+

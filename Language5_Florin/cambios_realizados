@@ -1,0 +1,10 @@
+cambios en los métodos de Language.h:
+-append, teniendo en cuenta la memoria dinámica
+-save
+-load
+-sobrecarga de los operadores que nos piden
+-crear un nuevo string "identificador", para saber si el fichero es binario o texto
+
+
+SUPUESTAMENTE:
+-Realizados los métodos serialize y deserialize de las clases Bigram y BigramFreq 

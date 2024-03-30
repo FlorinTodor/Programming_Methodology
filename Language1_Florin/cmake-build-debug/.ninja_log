@@ -1,0 +1,7 @@
+# ninja log v5
+202	265	1679945480899244654	Language1_Florin	75cecefc640d641
+0	27	1680113047360368124	build.ninja	b064e2b4dc7f5509
+1	196	1679945480827245337	CMakeFiles/Language1_Florin.dir/src/BigramFreq.cpp.o	96d2a261c4c5f124
+1	137	1679913942231813325	CMakeFiles/Language1_Florin.dir/src/Bigram.cpp.o	87b476626370e2b0
+0	176	1679945480811245490	CMakeFiles/Language1_Florin.dir/src/main.cpp.o	7d237edbcc25ce22
+1	202	1679945480835245261	CMakeFiles/Language1_Florin.dir/src/ArrayBigramFreqFunctions.cpp.o	309653e2f9b8aed9

@@ -1,0 +1,6 @@
+# ninja log v5
+0	167	1682805278072469884	CMakeFiles/prueba.dir/src/Bigram.cpp.o	63fecd784c463f8c
+0	173	1682805278080469878	CMakeFiles/prueba.dir/src/BigramFreq.cpp.o	51ecf8c2e7cfd16a
+0	176	1682805278084469876	CMakeFiles/prueba.dir/src/main.cpp.o	dc14410f3554dcf8
+0	204	1682805278112469855	CMakeFiles/prueba.dir/src/Language.cpp.o	39c2e4b6cfd018e6
+204	245	1682805278152469826	prueba	5d93247d40fb9826

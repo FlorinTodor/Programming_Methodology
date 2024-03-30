@@ -1,0 +1,3 @@
+/home/flo/Desktop/MP_2023/prueba/cmake-build-debug/CMakeFiles/prueba.dir
+/home/flo/Desktop/MP_2023/prueba/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/flo/Desktop/MP_2023/prueba/cmake-build-debug/CMakeFiles/rebuild_cache.dir

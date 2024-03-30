@@ -1,0 +1,40 @@
+Vamos a utilizar argumentos a través del main.
+
+Ficheros de entradas en formato .bgr. Se van a fusionar varios ficheros .bgr en uno solo.
+
+Vamos a utilizar las funciones externas de la práctica anterior, pero de otra forma.
+
+En esta práctica usaremos un vector estático. Language será una clase que almacene las frecuencia de un conjunto de brigramas.
+
+Objetivos
+El desarrollo de esta práctica Language2 persigue los siguientes ob-
+jetivos:
+Conocer la estructura de los ficheros de language *.bgr.
+Leer datos de un fichero de texto.
+Escribir datos en un fichero de texto.
+Practicar con una clase compuesta, la clase Language.
+Practicar el paso de parámetros a main() desde la lı́nea de coman-
+dos.
+
+
+Ficheros language:
+-Primer texto es siempre la cadena : “MP-LANGUAGE-T-1.0”
+
+-La segunda linea es una cadena que contiene que idioma es: ejemplo french
+
+-La tercera línea es el número de bigramas que tiene el texto
+
+-Las siguientes líneas contienen la lista de bigramas, con sus frecuencias ,según el número de bigramas especiicados.
+
+Además, hay que tener en cuenta que los ficheros de language, debén de estar ordenador de mayor a menor frecuencia y en el caso de que coincidan la frecuencia, ordenar de menor a mayor alfabeticamente
+
+Un ejemplo de llamada al programa desde un terminal podrı́a ser:
+Linux> dist/Debug/GNU-Linux/language2 <file1.bgr> [<file2.bgr> ... <filen.bgr>] <outputFile.bgr> Es decir, se pueden abrir n-1 ficheros como lectura para fusionar y siendo n el archivo de salida
+
+Sólamente se incluirá a la fusión si el identificador de idioma son iguales, el language de salida tendrá como identificador de idioma, el que tenga el primero de los ficheros de lectura. 
+
+El programa debe leer todos y cada uno de los ficheros language de entrada, indicados en la lı́nea de órdenes y fusionarlo en un único
+language. La fusión a realizar se descompone en fusión de pares de languages, según el siguiente procedimiento:
+
+a) Si el bigrama leı́do de un fichero nuevo ya existe en el language de salida, se suman las dos frecuencias.
+b) Si el bigrama nuevo no existe en el language de salida, se añade al final de este language con la frecuencia leı́da.
